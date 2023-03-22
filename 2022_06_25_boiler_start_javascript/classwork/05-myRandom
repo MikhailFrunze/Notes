@@ -1,0 +1,29 @@
+'use strict';
+// Math.random();
+let digit = Math.random();
+console.log(digit);
+
+// 10 to 100;
+function myRandomFunction(min, max) {
+    let result = Math.round(Math.random() * (max - min) + min);
+    return result;
+}
+
+let myDigit = myRandomFunction(90, 100);
+
+
+function truthFunction() {
+//    if (Math.round(Math.random()) == 0) {
+//     return false;
+//    } else {
+//     return true;
+//    }
+    return Math.round(Math.random()) === 0;
+}
+
+console.log(truthFunction());
+console.log(truthFunction());
+console.log(truthFunction());
+console.log(truthFunction());
+console.log(truthFunction());
+console.log(truthFunction());
