@@ -1,0 +1,58 @@
+Keywords
+
+=, <, >, <> 'not equal', <=, >=
+between, not between
+in, not in
+like, not like
+and, or
+()
+
+SELECT 
+	first_name,
+    last_name,
+    age
+FROM customers
+where first_name like '%O%';
+
+-- % множество символов
+-- _ один символ
+
+Output
+first_name	last_name	age
+John	Doe	31
+Robert	Luna	22
+John	Reinhardt	25
+
+drop table - delete a table
+not null - обязательно должно быть значение
+unique - значение должно быть уникальным
+primary key - обязательно должно быть значение и оно должно быть уникальным 
+(not null + unique)
+check - значение должно соответствовать условию
+
+-- int / integer - целое число
+-- numeric - может быть дробным
+-- varchar - строка
+-- char(3) - строка с ограничением по кол-ву символов
+
+
+create table Animals (
+	animal_id integer primary key,
+  	type varchar(128),
+  	name varchar(128),
+  	age integer,
+  	gender char(1) check(gender in ('M', 'F'))
+);
+
+-- not null - обязательно должно быть значение
+-- unique - значение должно быть уникальным
+-- primary key - not null + unique
+-- check - значение должно соответствовать условию
+
+-- UNION - 'вертикальное' объединение таблиц
+-- UNION - убирает дубли
+-- UNION ALL - подтягивает все данные
+
+-- JOIN - 'горизонтальное' объединение таблиц
+
+

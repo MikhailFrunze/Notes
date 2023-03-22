@@ -1,0 +1,11 @@
+Scenario: Customer Account Wishlist displays list of items
+    Given I am logged in
+    And I see Home page
+    And I have 1 item on my Wishlist
+
+    When I click on the Login icon
+    Then I should be logged in
+
+    When I click on Ihre Wunschliste
+    Then I see 1 item on the Wishlist
+automate

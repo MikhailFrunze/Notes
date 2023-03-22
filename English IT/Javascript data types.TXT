@@ -1,0 +1,7 @@
+string, number, boolean, undefined, null, object, symbol, big int
+
+pipelines, kubernetes, devops
+
+ci, cd, jenkins
+
+alert, confirm, prompt
