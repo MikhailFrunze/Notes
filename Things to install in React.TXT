@@ -1,0 +1,6 @@
+ npm install react-hook-form
+npm install react-router-dom
+npm i antd
+npm i react-redux
+npm install redux
+npm i redux-thunk
